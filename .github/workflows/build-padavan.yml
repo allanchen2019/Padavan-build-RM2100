@@ -7,8 +7,8 @@ on:
   push:
     tags:
     - 'v*'
-  #  branches: 
-  #    - master
+    branches: 
+      - master
   #schedule:
   #  - cron: 0 8 * * *
   watch:
@@ -32,7 +32,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev gcc-multilib
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/ivybridgei/rt-n56u /opt/rt-n56u
+        git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
