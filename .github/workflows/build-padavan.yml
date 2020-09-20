@@ -63,5 +63,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-packages-hanwckf-RM2100
+        name: Padavan-packages-hanwckf-RM2100-20200920
         path: /opt/images
